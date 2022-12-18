@@ -10,7 +10,7 @@
 
 ## Motivation
 
-This is a fork of Rouhim's BeamMP repo that's been lightly modified. The goal of this fork is to make it easier for people with existing BeamMP servers to move to Docker. It does away with environment variables in favor of passing through a Serverconfig.toml file.
+This is a fork of Rouhim's BeamMP repo that's been lightly modified. The goal of this fork is to make it easier for people with existing BeamMP servers to move to Docker. It does away with environment variables in favor of passing through a ServerConfig.toml file.
 
 ## Variants
 
@@ -22,9 +22,14 @@ The server is lightweight enough that two server instances can be run on the sam
 
 The sections below provides use cases for docker and docker-compose.
 
+Whether you're using docker or docker-compose, you'll need to modify the ServerConfig.toml example file to suit your needs. You *need* an authentication key at a minimum. Information on obtaining a key can be found [here](https://wiki.beammp.com/en/home/server-installation).
+
+If you're coming from an existing server to this docker container, simply replace the ServerConfig.toml with your own file. 
+
 ### docker
 
 Quick start:
+
 
 ```bash
 docker run --name beammp-server \
