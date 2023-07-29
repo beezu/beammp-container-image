@@ -14,7 +14,7 @@ This is a fork of Rouhim's BeamMP repo that's been lightly modified. The goal of
 
 ## Variants
 
-Rouhim publishes a [stable](https://github.com/BeamMP/BeamMP-Server/releases/latest) and [unstable](https://github.com/BeamMP/BeamMP-Server) version of BeamMP Server; this repo will only be publishing stable releases. Rouhim is (currently) only publishing amd64 images on Docker Hub, but my repo will be publishing both amd64 and arm64. [My stable releases can be found here](https://hub.docker.com/r/beezu/beammp-server).
+Rouhim publishes a [stable](https://github.com/BeamMP/BeamMP-Server/releases/latest) and [unstable](https://github.com/BeamMP/BeamMP-Server) version of BeamMP Server; this repo will only be publishing stable releases. [My stable releases can be found here](https://hub.docker.com/r/beezu/beammp-server).
 
 The server is lightweight enough that two server instances can be run on the same nano AWS ARM instance (which are cheaper than the amd64 equivalents) with plenty of resources to spare. I personally am using a t4g.nano instance.
 
